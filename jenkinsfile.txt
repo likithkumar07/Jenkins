@@ -1,9 +1,9 @@
 pipeline{
     agent any
         stages{
-           stage('First stage'){
+           stage('Fetching stage'){
              steps{
-                 echo 'Fetching code from git'
+                 git branch: 'main', url: 'https://github.com/likithkumar07/maven_cont.git'
                    }
                 }
             stage('Second stage'){
