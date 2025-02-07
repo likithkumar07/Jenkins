@@ -6,9 +6,9 @@ pipeline{
                  git branch: 'main', url: 'https://github.com/likithkumar07/maven_cont.git'
                    }
                 }
-            stage('Second stage'){
+            stage('Build stage'){
                steps{
-                  echo 'This is a build stage'
+                       build 'maven'
                       }
                     }
                   stage('Third stage'){
