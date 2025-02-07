@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+        stages{
+           stage('First stage'){
+             steps{
+                 echo 'Fetching code from git'
+                   }
+                }
+            stage('Second stage'){
+               steps{
+                  echo 'This is a build stage'
+                      }
+                    }
+                  stage('Third stage'){
+                      steps{
+                         echo 'This is Testing stage'
+                             }
+                            }
+                     stage('Fourth stage'){
+                           steps{
+                               echo 'This is Deploy stage'
+                            }
+                         }
+                    }
+                }  
